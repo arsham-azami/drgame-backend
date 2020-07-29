@@ -1,0 +1,17 @@
+{
+  "name": "drgamebackend",
+  "version": "1.0.0",
+  "description": "backend service",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "arsham aazami",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "joi": "^17.1.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+.container{
+    position: relative;
+    width: 60%;
+    height: 60%;
+}
+.image{
+    transition-property:position;
+    transition-duration:0.4 s;
+    position: relative;
+    width: 60%;
+    text-align: center;
+    height: 60%;
+}
+
+.par{
+    visibility: hidden;
+    position: absolute;
+    color: aliceblue;  
+    left: 10px;
+    bottom: 10px;
+}
+.image:hover{
+   visibility: visible;
+}
