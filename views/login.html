@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container">
+        <form action="">
+            <input type="text" placeholder="Enter your e-mail" name="" id="inputOne">
+            <input type="password" placeholder="Enter your password" name="" id="inputTwo">
+           <a href="">Forgot your password ?</a>
+           <div id="alert"></div> 
+        </form>
+    </div>
+    <script>
+      const inputOne = document.getElementById('inputOne')
+      const inputTwo = document.getElementById('inputTwo')
+      const alertele = document.getElementById('alert')
+      
+      if(!inputOne || !inputTwo){ 
+          const ele = document.createElement('h3')
+          ele.innerHTML = 'Please enter your info'
+          alertele.appendChild(ele)
+        }  
+      </script>
+</body>
+</html>
