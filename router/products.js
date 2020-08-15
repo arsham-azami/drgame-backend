@@ -58,6 +58,7 @@ const data = require('../data.json')
  
      const product = data.find( pro =>  pro.id === parseInt(req.params.id))
      if(!product) res.status(404).send(`the product with id ${req.params.id} wasn't found`)
+     
      else {
 
         product.product_name= req.body.product_name
