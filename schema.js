@@ -9,4 +9,20 @@ mongoose.connect('localhost:3000')
              age:Number
          })
 
-         mongoose.model
+    const User = mongoose.model('users', userSchema)
+  
+    //saving user in db
+    async function savingUser(){
+
+        const arsham = new User({
+            name:'arsham',
+            age:17
+        })
+
+        const res = await arsham.save()
+        console.log(res)   
+    }
+
+   savingUser()
+     //model, schema
+     //class, object
