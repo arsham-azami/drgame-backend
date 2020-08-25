@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const mongoose = require('mongoose')
 const morgan = require('morgan')
 const helmet = require('helmet')
 const routerDebuger = require('debug')('app:start') 
@@ -32,3 +33,10 @@ console.log(process.env.NODE_ENV)
 app.listen(3000, ()=>{
     console.log('Hello i am Dr.game which listening to port 3000')    
 })
+
+//connecting to the database
+mongoose.connect('mongodb://localhost/Games')
+    .then(() => console.log('connected to mongodb...'))
+    .catch(e => console.error('not connected to mongodb...', e))
+
+    
