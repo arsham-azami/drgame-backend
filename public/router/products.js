@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Joi = require('joi')
 
-const data = require('../data.json')
+const data = require('../../data.json')
 
 
  router.get('/', (req, res) => {
